@@ -1,6 +1,6 @@
-import TossGame from './components/tossGame'
+import FlipGame from './components/FlipGame'
 import './App.css'
 
-const App = () => <TossGame/>
+const App = () => <FlipGame/>
 
 export default App
