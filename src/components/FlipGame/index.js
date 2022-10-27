@@ -6,7 +6,7 @@ class FlipGame extends Component {
         total:0,
         happy:0,
         sad:0,
-        imgUrl:"https://i.ibb.co/4tYVG3k/png-clipart-yellow-emoji-clapping-animation-hand-happy-face-face-people.png",
+        imgUrl:"https://i.postimg.cc/rmKvPQRG/emoticon-g756e3677e-1920.png",
         alt:"Happy"
     }
 
@@ -16,12 +16,12 @@ class FlipGame extends Component {
         let {total,happy,sad} = this.state
         const randomImg = Math.ceil(Math.random()*2)
         if (randomImg === 1) {
-            url="https://i.ibb.co/4tYVG3k/png-clipart-yellow-emoji-clapping-animation-hand-happy-face-face-people.png"
-            urlAlt="snake-eaten"
+            url="https://i.postimg.cc/rmKvPQRG/emoticon-g756e3677e-1920.png"
+            urlAlt="Happy"
             happy = happy + 1
         } else {
-            url="https://i.ibb.co/kQYQxgw/png-transparent-sad-emoji-emoji-smirk-face-smile-emoticon-lost-expression-orange-smiley-cartoon.png"
-            urlAlt="snake"
+            url="https://i.postimg.cc/MpJqj2MC/emoji-gbcd5245e0-1920.png"
+            urlAlt="sad"
             sad = sad + 1
         }
 
@@ -47,7 +47,7 @@ class FlipGame extends Component {
                     <div className="img-container">
                         <img className="img" src={imgUrl} alt={alt}/>
                     </div>
-                    <button className="btn-style" onClick={this.onImageChange}>Flip</button>
+                    <button className="btn-style" onClick={this.onImageChange}>C L I C K</button>
                     <div className="counts-container">
                         <span className="counts-paragraph">Total:{total}</span>
                         <span className="counts-paragraph">Happy:{happy}</span>
